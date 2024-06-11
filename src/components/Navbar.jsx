@@ -19,7 +19,9 @@ const Navbar = () => {
         setActive("");
         window.scrollTo(0, 0);
       }}>
-      <img src={logo1} alt="logo" className="object-contain w-2 h-9"/>
+      <img src={logo1} alt="logo" style={{ width: '40px', height: '40px' }} />
+      <p className="text-[18px] font-bold cursor-pointer text-white">Himasha<span className='hidden sm:block'> | Undergraduate</span></p>
+
       </Link>
       </div>
     </nav>
