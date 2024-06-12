@@ -21,23 +21,20 @@ const Navbar = () => {
             window.scrollTo(0, 0);
           }}>
           <img src={logo1} alt="logo" style={{ width: '40px', height: '40px' }} />
-          <p className="text-[18px] font-bold cursor-pointer text-white">Himasha<span className='hidden sm:block'> | Undergraduate</span></p>
+          <p className="text-[18px] font-bold cursor-pointer text-white flex">Himasha &nbsp;
+            <span className='hidden sm:block'> | Undergraduate</span></p>
 
         </Link>
-        <ul className='flex-row hidden gap-10 list-none sm-flex'>
-          {navLinks.map((link) => (
+        <ul className='flex-row hidden gap-10 list-none sm:flex'>
+          {navLinks.map((nav) => (
             <li
-              key={link.id}
-              className={`${active === link.title
-                  ? "text-white"
-                  : "text-secondary"}
-          hover:text-white text-[18px] 
-          front-medium cursor-pointer
-          `}
-              onClick={() => setActive(link.title)}
+              key={nav.id}
+              className={`${
+                active === nav.title ? "text-white" : "text-secondary"
+              } hover:text-white text-[18px] font-medium cursor-pointer`}
+              onClick={() => setActive(nav.title)}
             >
-              <a href={'#${link.id}'}>{link.title}</a>
-
+              <a href={`#${nav.id}`}>{nav.title}</a>
             </li>
           ))}
         </ul>
