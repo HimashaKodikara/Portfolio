@@ -19,6 +19,10 @@ const Hero = () => {
      
     </div>
     <ComputersCanvas/>
+    <div className='flex items-center justify-center w-full absolte xs:bottom-10 bottom-32'>
+      
+
+    </div>
    </section>
   );
 };
