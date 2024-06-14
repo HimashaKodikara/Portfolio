@@ -23,9 +23,9 @@ import {
   jobit,
   tripguide,
   threejs,
-
+ 
 } from "../assets";
-import {DS} from "../assets/company";
+import ds from "../assets/company/ds.png";
 export const navLinks = [
   {
     id: "about",
@@ -116,8 +116,7 @@ const experiences = [
   {
     title: "D.S.Senanayake College",
     company_name: "A/L in Commerce stream",
-    icon: DS,
-    iconBg: "#383E56",
+    icon: ds,
     date: "March 2020 - April 2021",
     points: [
       "Developing and maintaining web applications using React.js and other related technologies.",
