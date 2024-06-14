@@ -23,8 +23,9 @@ import {
   jobit,
   tripguide,
   threejs,
-} from "../assets";
 
+} from "../assets";
+import {DS} from "../assets/company";
 export const navLinks = [
   {
     id: "about",
@@ -113,9 +114,9 @@ const technologies = [
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
+    title: "D.S.Senanayake College",
+    company_name: "A/L in Commerce stream",
+    icon: DS,
     iconBg: "#383E56",
     date: "March 2020 - April 2021",
     points: [
@@ -126,7 +127,7 @@ const experiences = [
     ],
   },
   {
-    title: "React Native Developer",
+    title: "D.S.Senanayake College",
     company_name: "Tesla",
     icon: tesla,
     iconBg: "#E6DEDD",
