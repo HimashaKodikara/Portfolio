@@ -20,7 +20,7 @@ const Hero = () => {
      
     </div>
     <ComputersCanvas/>
-    <div className='flex items-center justify-center w-full absolte xs:bottom-10 bottom-32'>
+    <div className='absolute flex items-center justify-center w-full xs:bottom-5 bottom-32'>
       
          <a href='#about'>
           <div className='w-[35px] h-[64px] rounded-3xl border-4 border-secondary
