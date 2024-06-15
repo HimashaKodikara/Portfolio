@@ -26,6 +26,7 @@ import {
  
 } from "../assets";
 import ds from "../assets/company/ds.png";
+import AAT from "../assets/company/AAT.png";
 export const navLinks = [
   {
     id: "about",
@@ -117,18 +118,19 @@ const experiences = [
     title: "D.S.Senanayake College",
     company_name: "A/L in Commerce stream",
     icon: ds,
-    date: "March 2020 - April 2021",
+    iconBg: "#E6DEDD",
+    date: " 2017 -  2020",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Passed with 3A's",
+      "GPA - 1.9783",
+      "Accounting - A | Business Studies - A | Economics - A",
+      
     ],
   },
   {
-    title: "D.S.Senanayake College",
+    title: " Association of Accounting Technicians",
     company_name: "Tesla",
-    icon: tesla,
+    icon: AAT,
     iconBg: "#E6DEDD",
     date: "Jan 2021 - Feb 2022",
     points: [
