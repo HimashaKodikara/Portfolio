@@ -28,6 +28,8 @@ import {
 import ds from "../assets/company/ds.png";
 import AAT from "../assets/company/AAT.png";
 import CA from "../assets/company/CA.png";
+import Open from "../assets/company/Open.jpeg";
+import Moratuwa from "../assets/company/Moratuwa.png";
 export const navLinks = [
   {
     id: "about",
@@ -119,7 +121,7 @@ const experiences = [
     title: "D.S.Senanayake College",
     company_name: "A/L in Commerce stream",
     icon: ds,
-    iconBg: "#E6DEDD",
+    iconBg: "#ffffff",
     date: " 2017 -  2020",
     points: [
       "Passed with 3A's",
@@ -132,7 +134,7 @@ const experiences = [
     title: " MAAT",
     company_name: " Association of Accounting Technicians",
     icon: AAT,
-    iconBg: "#E6DEDD",
+    iconBg: "#ffffff",
     date: " 2019 - 2021",
     points: [
       "Successfully Completed all levels"
@@ -142,7 +144,7 @@ const experiences = [
     title: "CA",
     company_name: "Institute of Charted Accountants of Sri Lanka ",
     icon: CA,
-    iconBg: "#E6DEDD",
+    iconBg: "#ffffff",
     date: " 2021 -  2022",
     points: [
       "Completed Business level 1 and 2",
@@ -150,16 +152,28 @@ const experiences = [
     ],
   },
   {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
-    iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
+    title: " Bachelor of Software Engineering ",
+    company_name: "Open university, Sri Lanka",
+    icon: Open,
+    iconBg: "#ffffff",
+    date: " 2021 - Present",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "3rd year undergraduate",
+      
+     ,
+    ],
+  },
+  {
+    title: "B.Sc.(Hons) in Information Technology and management",
+    company_name: "University of Moratuwa ",
+    icon: Moratuwa,
+    iconBg: "#ffffff",
+    date: " 2021 - Present",
+    points: [
+      "Reading degree in 2nd year",
+      " Dean list in 1st Semester."
+      
+     ,
     ],
   },
 ];
