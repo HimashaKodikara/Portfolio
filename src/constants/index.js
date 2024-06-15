@@ -27,6 +27,7 @@ import {
 } from "../assets";
 import ds from "../assets/company/ds.png";
 import AAT from "../assets/company/AAT.png";
+import CA from "../assets/company/CA.png";
 export const navLinks = [
   {
     id: "about",
@@ -128,29 +129,24 @@ const experiences = [
     ],
   },
   {
-    title: " Association of Accounting Technicians",
-    company_name: "Tesla",
+    title: " MAAT",
+    company_name: " Association of Accounting Technicians",
     icon: AAT,
     iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
+    date: " 2019 - 2021",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
+      "Successfully Completed all levels"
+    ]
   },
   {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
-    iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
+    title: "CA",
+    company_name: "Institute of Charted Accountants of Sri Lanka ",
+    icon: CA,
+    iconBg: "#E6DEDD",
+    date: " 2021 -  2022",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Completed Business level 1 and 2",
+     
     ],
   },
   {
