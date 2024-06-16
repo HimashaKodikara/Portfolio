@@ -131,7 +131,7 @@ const experiences = [
     ],
   },
   {
-    title: " MAAT",
+    title: "Passed Finalist",
     company_name: " Association of Accounting Technicians",
     icon: AAT,
     iconBg: "#ffffff",

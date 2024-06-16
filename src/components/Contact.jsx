@@ -36,26 +36,37 @@ const Contact = () => {
       className="px-6 py-4 font-medium text-white border-none rounded-lg bg-tertiary placeholder:text-secondary outlined-none"/>
     </label>
     <label className="flex flex-col">
-      <span className="mb-4 font-medium text-white">Your Name</span>
+      <span className="mb-4 font-medium text-white">Your Email</span>
       <input 
-      type="text"
-      name="name"
-      value={form.name}
+      type="email"
+      name="email"
+      value={form.email}
       onChange={handleChange}
-      placeholder="What is your Name?"
+      placeholder="What is your Email?"
       className="px-6 py-4 font-medium text-white border-none rounded-lg bg-tertiary placeholder:text-secondary outlined-none"/>
     </label>
     <label className="flex flex-col">
-      <span className="mb-4 font-medium text-white">Your Name</span>
-      <input 
-      type="text"
-      name="name"
-      value={form.name}
+      <span className="mb-4 font-medium text-white">Your Message</span>
+      <textarea
+      rows="7"
+      name="message"
+      value={form.message}
       onChange={handleChange}
-      placeholder="What is your Name?"
+      placeholder="What do you want to say?"
       className="px-6 py-4 font-medium text-white border-none rounded-lg bg-tertiary placeholder:text-secondary outlined-none"/>
     </label>
+    <button type="submit"
+    className="bg-tertiray py-3 px-8 *:outline-none w-fit text-white
+    font-bold shadow-md shadow-primary
+    rounded-xl">
+{loading ? "Sending..." : "Send"}
+    </button>
    </form>
+     </motion.div>
+     <motion.div
+     variants={slideIn('left','tween',0.2,1)}
+     className="xl:flex-1 xl:h-auto md:h-[550px] h-[350px]">
+   <EarthCanvas/>
      </motion.div>
     </div>
   );
