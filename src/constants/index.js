@@ -23,6 +23,7 @@ import {
   jobit,
   tripguide,
   threejs,
+  
  
 } from "../assets";
 import ds from "../assets/company/ds.png";
@@ -30,6 +31,9 @@ import AAT from "../assets/company/AAT.png";
 import CA from "../assets/company/CA.png";
 import Open from "../assets/company/Open.jpeg";
 import Moratuwa from "../assets/company/Moratuwa.png";
+import Java from "../assets/tech/java.jpg";
+
+import C from "../assets/tech/C.svg";
 export const navLinks = [
   {
     id: "about",
@@ -75,16 +79,16 @@ const technologies = [
     icon: javascript,
   },
   {
-    name: "TypeScript",
-    icon: typescript,
+    name: "C#",
+    icon: C,
   },
   {
     name: "React JS",
     icon: reactjs,
   },
   {
-    name: "Redux Toolkit",
-    icon: redux,
+    name: "Java",
+    icon: Java,
   },
   {
     name: "Tailwind CSS",

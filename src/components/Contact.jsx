@@ -10,19 +10,23 @@ import { slideIn } from "../utils/motion";
 const Contact = () => {
   const formRef = useRef();
   const[form,setForm] = useState(
-    {name:"",email:"",message:""});
+    {name:'',
+      email:'',
+      message:'',});
     const [loading,setLoading] = useState(false);
+
+
     const handleChange = (e) => {
 
       const {name,value} = e.target;
-      setForm({...form,[name]:value})
+      setForm({...form,[name]:value })
     }
     const handleSubmit = (e) => 
       {
         e.preventDefault();
         setLoading(true);
 
-        emailjs.sendForm('service_oyki62p','template_l7apa0k',
+        emailjs.send('service_oyki62p','template_l7apa0k',
           {
             from_name: form.name,
             to_name:'Himasha Kodikara',
@@ -34,7 +38,7 @@ const Contact = () => {
         )
         .then(() => {
           setLoading(false);
-          alert('Thank You. I will get back to you as sson as possible');
+          alert('Thank You. I will get back to you as soon as possible');
 
           setForm({
             name:'',
