@@ -6,6 +6,7 @@ import {styles} from '../styles';
 import { services } from '../constants';
 import {fadeIn , textVariant} from '../utils/motion';
 import { SectionWrapper } from '../hoc';
+import j from "../assets/Me.png";
 
 const ServiceCard =({index,title,icon})=>{
   return(
@@ -35,10 +36,11 @@ const ServiceCard =({index,title,icon})=>{
 const About = () => {
   return (
     <>
+     <div className="flex xl:flex-row">
      <motion.div>
       <p className={styles.sectionSubText}>Introduction</p>
       <p className={styles.sectionHeadText} >Overview</p>
-     </motion.div>
+    
      <motion.p
      variants={fadeIn("","",0.1,1)}
      className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'>
@@ -46,12 +48,15 @@ const About = () => {
       to create efficient, scalable and user-friendly solutions that solve real-world problems.As an IT student with a fervent passion for continuous learning, I am dedicated to expanding my knowledge and skills in the ever-evolving field of information technology and management.
        Let's work together to build something great. 
      </motion.p>
-     <div className='flex flex-wrap gap-10 mt-20 '>
+     <div className='flex flex-wrap gap-10 mt-20 mb-50 '>
       {services.map((service,index) => (
         <ServiceCard key={services.title}
          index={index} {...service}/>
       ))}
 
+     </div>
+     </motion.div>
+     <img variants={fadeIn("","",0.1,1)} src={j} alt="Himasha" className='xl:w-[300px] xl:h-[350px] rounded-3xl xl:ml-60 xl:mt-20 sm:w-[200px] sm:h-[250px] sm:ml-4 sm:mt-4'/>
      </div>
     </>
   );
