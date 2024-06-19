@@ -31,7 +31,10 @@ import AAT from "../assets/company/AAT.png";
 import CA from "../assets/company/CA.png";
 import Open from "../assets/company/Open.jpeg";
 import Moratuwa from "../assets/company/Moratuwa.png";
-import Java from "../assets/tech/java.jpg";
+import Java from "../assets/tech/java.png";
+import Py from "../assets/tech/py.png";
+import php from "../assets/tech/php.png";
+import net from "../assets/tech/.net.png";
 
 import C from "../assets/tech/C.svg";
 export const navLinks = [
@@ -83,6 +86,10 @@ const technologies = [
     icon: C,
   },
   {
+    name: "Python",
+    icon: Py,
+  },
+  {
     name: "React JS",
     icon: reactjs,
   },
@@ -94,10 +101,7 @@ const technologies = [
     name: "Tailwind CSS",
     icon: tailwind,
   },
-  {
-    name: "Node JS",
-    icon: nodejs,
-  },
+  
   {
     name: "MongoDB",
     icon: mongodb,
@@ -115,9 +119,13 @@ const technologies = [
     icon: figma,
   },
   {
-    name: "docker",
-    icon: docker,
+    name: "PHP",
+    icon: php,
   },
+  {
+    name: ".Net",
+    icon: net,
+  }
 ];
 
 const experiences = [
