@@ -6,9 +6,7 @@ import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
 
-//template_l7apa0k
-//service_oyki62p
-//bX7ob55rM3wPFOmv7
+
 const Contact = () => {
   const formRef = useRef();
   const[form,setForm] = useState(
@@ -34,6 +32,22 @@ const Contact = () => {
           },
           'bX7ob55rM3wPFOmv7'
         )
+        .then(() => {
+          setLoading(false);
+          alert('Thank You. I will get back to you as sson as possible');
+
+          setForm({
+            name:'',
+            email:'',
+            message:''
+          })
+        },(error)=>{
+          setLoading(false);
+          alert('Sorry. An error occured. Please try again later');
+        
+          console.log(error);
+          alert('Something went wrong');
+        })
       }
   return (
     <div className="flex flex-col-reverse gap-10 overflow-hidden xl:mt-12 xl:flex-row">
@@ -41,6 +55,7 @@ const Contact = () => {
      variants={slideIn('left','tween',0.2,1)}
      className="flex-[0.75] bg-black-100 p-8 rounded-2xl">
  <p className={styles.sectionSubText}>Get in touch</p>
+ <p></p>
  <h3 className={styles.sectionHeadText}>Contact</h3>
  <form
    ref={formRef}
