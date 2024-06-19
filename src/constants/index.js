@@ -35,6 +35,7 @@ import Java from "../assets/tech/java.png";
 import Py from "../assets/tech/py.png";
 import php from "../assets/tech/php.png";
 import net from "../assets/tech/.net.png";
+import sql from "../assets/tech/sql.png";
 
 import C from "../assets/tech/C.svg";
 export const navLinks = [
@@ -106,26 +107,20 @@ const technologies = [
     name: "MongoDB",
     icon: mongodb,
   },
-  {
-    name: "Three JS",
-    icon: threejs,
+   {
+    name: ".Net",
+    icon: net,
   },
   {
-    name: "git",
-    icon: git,
+    name: "SQl",
+    icon: sql,
   },
   {
     name: "figma",
     icon: figma,
   },
-  {
-    name: "PHP",
-    icon: php,
-  },
-  {
-    name: ".Net",
-    icon: net,
-  }
+ 
+ 
 ];
 
 const experiences = [

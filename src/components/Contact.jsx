@@ -5,7 +5,7 @@ import {styles} from '../styles';
 import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
-
+import j from "../assets/Me.png";
 
 const Contact = () => {
   const formRef = useRef();
@@ -54,17 +54,17 @@ const Contact = () => {
         })
       }
   return (
-    <div className="flex flex-col-reverse gap-10 overflow-hidden xl:mt-12 xl:flex-row">
+    <div className="flex flex-col-reverse gap-24 overflow-hidden xl:mt-12 xl:flex-row">
      <motion.div
      variants={slideIn('left','tween',0.2,1)}
-     className="flex-[0.75] bg-black-100 p-8 rounded-2xl">
+     className="flex-[0.95] bg-black-100 p-8 rounded-2xl">
  <p className={styles.sectionSubText}>Get in touch</p>
  <p></p>
  <h3 className={styles.sectionHeadText}>Contact</h3>
  <form
    ref={formRef}
    onSubmit={handleSubmit}
-   className="flex flex-col gap-8 mt-12">
+   className="flex flex-col w-auto gap-5 mt-12">
     <label className="flex flex-col">
       <span className="mb-4 font-medium text-white">Your Name</span>
       <input 
@@ -106,7 +106,7 @@ const Contact = () => {
      <motion.div
      variants={slideIn('left','tween',0.2,1)}
      className="xl:flex-1 xl:h-auto md:h-[550px] h-[350px]">
-   <EarthCanvas/>
+  <EarthCanvas/>
      </motion.div>
     </div>
   );
