@@ -23,6 +23,17 @@ const Contact = () => {
       {
         e.preventDefault();
         setLoading(true);
+
+        emailjs.sendForm('service_oyki62p','template_l7apa0k',
+          {
+            from_name: form.name,
+            to_name:'Himasha Kodikara',
+            from_email: form.email,
+            to_email : 'himasha.kodikara2001@gmail.com',
+            message: form.message,
+          },
+          'bX7ob55rM3wPFOmv7'
+        )
       }
   return (
     <div className="flex flex-col-reverse gap-10 overflow-hidden xl:mt-12 xl:flex-row">
