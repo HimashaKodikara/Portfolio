@@ -38,6 +38,7 @@ import net from "../assets/tech/.net.png";
 import sql from "../assets/tech/sql.png";
 import Cab from "../assets/Cab.jpg";
 import C from "../assets/tech/C.svg";
+import key from "../assets/key.png";
 
 export const navLinks = [
   {
@@ -230,9 +231,9 @@ const projects = [
     source_code_link: "https://github.com/HimashaKodikara/CabServise",
   },
   {
-    name: "Job IT",
+    name: "License Key Management System",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "My team and I developed this project as part of our second-year software engineering course. This project was undertaken in response to a requirement from Hsenid to manage their license keys. The system we developed includes functionalities for issuing license keys and analyzing their usage.",
     tags: [
       {
         name: "react",
@@ -247,8 +248,9 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
-    source_code_link: "https://github.com/",
+    image: key,
+    source_code_link: "https://github.com/sunera321/license_management_system",
+    backend:"https://github.com/sunera321/license_management_system-Sever-side"
   },
   {
     name: "Trip Guide",
