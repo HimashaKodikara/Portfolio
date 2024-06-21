@@ -36,8 +36,9 @@ import Py from "../assets/tech/py.png";
 import php from "../assets/tech/php.png";
 import net from "../assets/tech/.net.png";
 import sql from "../assets/tech/sql.png";
-
+import Cab from "../assets/Cab.jpg";
 import C from "../assets/tech/C.svg";
+
 export const navLinks = [
   {
     id: "about",
@@ -214,25 +215,19 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "Cab Service",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "This an application made with python. This can use any cab service and customer not able to use this. Cab service can use this to assign vehicle according to customer requirement and check whether vehicle is available or not. Not only that can check amount that customer want to pay according to customer requirements. And also can add drivers details to the system. All of these function can do in single GUI."
+,
     tags: [
       {
-        name: "react",
+        name: "python",
         color: "blue-text-gradient",
       },
-      {
-        name: "mongodb",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwind",
-        color: "pink-text-gradient",
-      },
+      
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+    image: Cab,
+    source_code_link: "https://github.com/HimashaKodikara/CabServise",
   },
   {
     name: "Job IT",
