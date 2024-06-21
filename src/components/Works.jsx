@@ -3,16 +3,30 @@ import { motion } from "framer-motion";
 import { styles } from "../styles";
 import { github } from "../assets";
 import { SectionWrapper } from "../hoc";
-import {projects} from '../constants';
-import {fadeIn, textVariant} from '../utils/motion';
+import { projects } from '../constants';
+import { fadeIn, textVariant } from '../utils/motion';
 
 const Works = () => {
   return (
-    <div>
-      <h1>Works</h1>
-      
-    </div>
+    <>
+      <motion.div variants={textVariant()}>
+        <p className={`${styles.sectionSubText} text-center`}>My work</p>
+        <h2 className={`${styles.sectionHeadText} text-center`}>Projects</h2>
+      </motion.div>
+      <div className="flex w-full">
+        <motion.p
+        variants={fadeIn("","",0.1,1)}
+        className="mt-3 text-secondary text-[17px]
+         leading-[30px] xl:ml-72 xl:mr-64 justify-center">
+        Following projectsshowcase my skills and experience through real-world examples 
+        of my work. Each project is briefly described
+        with links to code repositories and live demos.
+        It reflects my ability to work with different technologies.
+        </motion.p>
+
+      </div>
+    </>
   );
 };
 
-export default Works;
+export default SectionWrapper(Works, "");
