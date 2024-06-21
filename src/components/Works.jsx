@@ -6,6 +6,14 @@ import { SectionWrapper } from "../hoc";
 import { projects } from '../constants';
 import { fadeIn, textVariant } from '../utils/motion';
 
+const ProjectCard = ({index,name, description, tags, image, source_code__link }) => {
+  return(
+    <motion.div
+    variants={fadeIn("up","spring",0.5 * index,0.75)}>
+      test
+    </motion.div>
+  )
+}
 const Works = () => {
   return (
     <>
@@ -24,6 +32,14 @@ const Works = () => {
         It reflects my ability to work with different technologies.
         </motion.p>
 
+      </div>
+      <div className="flex flex-wrap mt-20 gap-7">
+{
+  projects.map((project,index)=>(
+    <ProjectCard key={'project-${index'}
+    {...project}/>
+  ))
+}
       </div>
     </>
   );
