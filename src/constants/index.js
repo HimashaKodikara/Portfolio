@@ -39,6 +39,7 @@ import sql from "../assets/tech/sql.png";
 import Cab from "../assets/Cab.jpg";
 import C from "../assets/tech/C.svg";
 import key from "../assets/key.png";
+import cat from "../assets/Cat.png";
 
 export const navLinks = [
   {
@@ -46,8 +47,8 @@ export const navLinks = [
     title: "About",
   },
   {
-    id: "work",
-    title: "Work",
+    id: "works",
+    title: "Works",
   },
   {
     id: "contact",
@@ -218,7 +219,7 @@ const projects = [
   {
     name: "Cab Service",
     description:
-      "This an application made with python. This can use any cab service and customer not able to use this. Cab service can use this to assign vehicle according to customer requirement and check whether vehicle is available or not. Not only that can check amount that customer want to pay according to customer requirements. And also can add drivers details to the system. All of these function can do in single GUI."
+      "This an application made with python. This can use any cab service and customer not able to use this. Cab service can use this to assign vehicle according to customer requirement and check whether vehicle is available or not. Not only that can check amount that customer want to pay according to customer requirements. And also can add drivers details to the system."
 ,
     tags: [
       {
@@ -240,11 +241,11 @@ const projects = [
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "asp.net",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "tailwind css",
         color: "pink-text-gradient",
       },
     ],
@@ -253,47 +254,21 @@ const projects = [
     backend:"https://github.com/sunera321/license_management_system-Sever-side"
   },
   {
-    name: "Trip Guide",
+    name: "Chatbot",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "This is the code for comapny chatbot which is developed using python. This chatbot can be used to answer the questions of the customers. This chatbot is developed using python and jupyter notebook.",
     tags: [
       {
-        name: "nextjs",
-        color: "blue-text-gradient",
+        name: "jupyter notebook",
+        color: " orange-text-gradient",
       },
-      {
-        name: "supabase",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
+      
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: cat,
+    source_code_link: "https://github.com/HimashaKodikara/Chatbot-python",
+     backend:"https://github.com/HimashaKodikara/Chatbot-python"
   },
-  {
-    name: "Trip Guide",
-    description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-    tags: [
-      {
-        name: "nextjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "supabase",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
-  }
+  
 ];
 
 export { services, technologies, experiences, testimonials, projects };
