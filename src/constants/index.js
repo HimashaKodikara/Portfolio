@@ -34,7 +34,7 @@ import Moratuwa from "../assets/company/Moratuwa.png";
 import Java from "../assets/tech/java.png";
 import Py from "../assets/tech/py.png";
 import php from "../assets/tech/php.png";
-import net from "../assets/tech/.net.png";
+import net from "../assets/tech/net.png";
 import sql from "../assets/tech/sql.png";
 import Cab from "../assets/Cab.jpg";
 import C from "../assets/tech/C.svg";
