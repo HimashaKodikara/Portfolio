@@ -10,7 +10,7 @@ import { fadeIn, textVariant } from '../utils/motion';
 const ProjectCard = ({ index, name, description, tags, image,source_code_link,backend}) => {
   return (
     <motion.div
-      variants={fadeIn("up", "spring", index * 0.5, 0.75)} className="xl:ml-20 ">
+      variants={fadeIn("up", "spring", index * 0.5, 0.75)} className="xl:ml-10 ">
       <Tilt
         options={{
           mac: 45,
