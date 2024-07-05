@@ -135,7 +135,7 @@ const experiences = [
     date: " 2017 -  2020",
     points: [
       "Passed with 3A's",
-      "GPA - 1.9783",
+      "Z-core - 1.9783",
       "Accounting - A | Business Studies - A | Economics - A",
       
     ],
