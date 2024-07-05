@@ -26,8 +26,8 @@ import {
   
  
 } from "../assets";
-import ds from "../assets/company/ds.png";
-import AAT from "../assets/company/AAT.png";
+import {ds} from "../assets/company/ds.png";
+import {AAT} from "../assets/company/AAT.png";
 import CA from "../assets/company/CA.png";
 import Open from "../assets/company/Open.jpeg";
 import Moratuwa from "../assets/company/Moratuwa.png";
